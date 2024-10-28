@@ -7,7 +7,8 @@ from dotenv import load_dotenv, find_dotenv
 
 # Load environment variables
 _ = load_dotenv(find_dotenv())
-API_URL = os.getenv('API_URL', 'http://facematchapi-production.up.railway.app/api/face_match_api/')
+# API_URL = os.getenv('API_URL', 'http://127.0.0.1:8000/api/face_match_api/')
+API_URL = 'https://facematchapi-production.up.railway.app/api/face_match_api/'
 
 def main():
     # Streamlit UI components
