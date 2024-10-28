@@ -20,4 +20,4 @@ RUN chown -R appuser /tmp /code
 USER appuser
 
 # Set the default command to run the app using Streamlit
-CMD ["streamlit", "run", main.py", "--server.port=8000", "--server.address=0.0.0.0"]
+CMD ["streamlit", "run", "streamlit.py", "--server.port=8000", "--server.address=0.0.0.0"]
